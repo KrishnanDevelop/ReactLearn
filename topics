@@ -1,0 +1,38 @@
+component
+class component
+props -> send data through where component value and get the value in component function
+            argument via props properties
+class props -> same as props when get the value using this keyword get the props properties
+conditional rendering
+    * if 
+    * ternary operator
+    * Logical operator (&&) -> it is same as ternary operator but dos not do else value
+
+List -> means loop but does not contain for and foreach
+            only map function using
+css styling -> we can create using style method in obj
+                ->camelcase
+                ->bootstrap-> classname
+ES6
+    constructor
+        ->we can create constructor in class component
+    Arrow Functions
+        ->we can create short function 
+            ex: () => {         ||   () => some code in single statement
+                return ...
+            }
+    Destructuring
+        -> in array or obj , what values are necessary in that, it can be get the value 
+            using Destructuring and stored in varaibale
+    Template strings
+        -> it is used to show the variable in strings using Backtick string(``)
+            ex: `this is ${data}`
+    Spread operator
+        -> it is used to copy tha value one array ot another
+    Module
+        -> import and export
+
+State -> when the value is changed dynamically use State
+effect -> make any chnages or call api or any changes happen when page rendering
+            use effect -> first render , make second parameter is []
+                        ->every time call second parameter is not provide

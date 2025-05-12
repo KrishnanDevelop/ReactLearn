@@ -2,6 +2,7 @@ import ArrayComponent from "./ArrayComponent";
 import Car from "./Car"
 import ClassComponent from "./ClassComponent"
 import ClassState from "./ClassState";
+import MyForm from "./MyForm";
 import Scooter from "./Scooter";
 import StateLearn from "./StateLearn";
 import User from "./User";
@@ -23,16 +24,17 @@ function Garage(){
         {id: 3, name:'Sridhar', place:'Erode'}
     ];
     return <>
-        <p>Currently Available vechicles</p>
-        { brandName !== undefined 
+        {/* <p>Currently Available vechicles</p> */}
+        {/* { brandName !== undefined 
         ? <Car brandName = {brandName} status ={'cricket'} stats = {stats}/>
-        : null }
-        <ClassComponent stats = {stats}/>
+        : null } */}
+        {/* <ClassComponent stats = {stats}/>
         <User users ={users}/>
         <StateLearn/>
         <ClassState name={stats}/>
         <Scooter/>
-        <ArrayComponent/>
+        <ArrayComponent/> */}
+        <MyForm/>
     </>
 }
 export default Garage
