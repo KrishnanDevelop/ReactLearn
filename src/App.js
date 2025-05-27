@@ -6,7 +6,7 @@ import About from './components/Router/About'
 import Contact from './components/Router/Contact'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Paramter from './components/Router/Paramter';
-
+import FCMToken from "./components/FCMToken";
 
 function App() {
   return (
@@ -34,6 +34,10 @@ function App() {
               <Route path="/parameter/:id" element={<Paramter/>}/>
           </Routes>
       </BrowserRouter>
+      <div className="App">
+      <h1>FCM Token Generator</h1>
+      <FCMToken />
+    </div>
     </div>
   );
 }

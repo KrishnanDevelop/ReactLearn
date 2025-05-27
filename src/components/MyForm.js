@@ -4,8 +4,6 @@ function MyForm() {
         const [data, setname] = useState({})
 
         function changeData(e) {
-            // console.log(e.target.name);
-
             setname((previous) => {
                 return {...previous, [e.target.name]: e.target.value}
             });
