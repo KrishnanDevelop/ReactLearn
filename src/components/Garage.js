@@ -24,16 +24,16 @@ function Garage(){
         {id: 3, name:'Sridhar', place:'Erode'}
     ];
     return <>
-        {/* <p>Currently Available vechicles</p> */}
-        {/* { brandName !== undefined 
+        <p>Currently Available vechicles</p>
+        { brandName !== undefined 
         ? <Car brandName = {brandName} status ={'cricket'} stats = {stats}/>
-        : null } */}
-        {/* <ClassComponent stats = {stats}/>
+        : null }
+        <ClassComponent stats = {stats}/>
         <User users ={users}/>
         <StateLearn/>
         <ClassState name={stats}/>
         <Scooter/>
-        <ArrayComponent/> */}
+        <ArrayComponent/>
         <MyForm/>
     </>
 }

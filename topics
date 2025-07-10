@@ -7,6 +7,7 @@ conditional rendering
     * if 
     * ternary operator
     * Logical operator (&&) -> it is same as ternary operator but dos not do else value
+    * optional operator (obj?.keyname) it is use to error handling same as above if keyname is not return boolean
 
 List -> means loop but does not contain for and foreach
             only map function using
@@ -28,7 +29,7 @@ ES6
         -> it is used to show the variable in strings using Backtick string(``)
             ex: `this is ${data}`
     Spread operator
-        -> it is used to copy tha value one array ot another
+        -> it is used to copy tha value one array ot another (...data)
     Module
         -> import and export
 
@@ -67,6 +68,16 @@ Hooks
     useRef = it is same as useState , it use used to acces dom.property 
                     1. like get (html) input values, change style 
                     2. we can store data prevoius render value
+    useCallback => used to restrict functionCall in component on every render untill dependency change,
+                    when the params are changed execute again.
+                    it is used to cached date, it is not used commonly when it used for criticla function logic.
+    
+    useMemo  => same as calback, it is used for variable
+
+    useReducer => it is used to write logical condition like if switch etc
+
+React Memo => it is used for restrict Rerender function when props are same, it is used for performance mainly for function cached
+
 AdvancedTopics
     Error boundary -> it is used to dislay some error if cause unwanted error happen it dsplay many error in ui,
                         in that time we use error boundary
@@ -77,8 +88,6 @@ AdvancedTopics
 
 
 Need to Study :
-lifecycle component
-hooks last three
 lifecycle component
     Mounting
     updating

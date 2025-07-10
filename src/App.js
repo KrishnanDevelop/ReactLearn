@@ -7,12 +7,14 @@ import Contact from './components/Router/Contact'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Paramter from './components/Router/Paramter';
 import FCMToken from "./components/FCMToken";
+import AppRoutes from './routes/AppRoutes';
+
 
 function App() {
   return (
     // <Garage/>
     <div className='App'>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <ul>
             <li>
                     <Link to='/'>Home</Link>
@@ -33,11 +35,14 @@ function App() {
               <Route path="/about" element={<About/>}/>
               <Route path="/parameter/:id" element={<Paramter/>}/>
           </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       <div className="App">
-      <h1>FCM Token Generator</h1>
-      <FCMToken />
-    </div>
+        <h1>FCM Token Generator</h1>
+        {/* <FCMToken /> */}
+        <BrowserRouter>
+                <AppRoutes />
+        </BrowserRouter>
+        </div>
     </div>
   );
 }
