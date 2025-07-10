@@ -1,0 +1,100 @@
+component
+class component
+props -> send data through where component value and get the value in component function
+            argument via props properties
+class props -> same as props when get the value using this keyword get the props properties
+conditional rendering
+    * if 
+    * ternary operator
+    * Logical operator (&&) -> it is same as ternary operator but dos not do else value
+    * optional operator (obj?.keyname) it is use to error handling same as above if keyname is not return boolean
+
+List -> means loop but does not contain for and foreach
+            only map function using
+css styling -> we can create using style method in obj
+                ->camelcase
+                ->bootstrap-> classname
+ES6
+    constructor
+        ->we can create constructor in class component
+    Arrow Functions
+        ->we can create short function 
+            ex: () => {         ||   () => some code in single statement
+                return ...
+            }
+    Destructuring
+        -> in array or obj , what values are necessary in that, it can be get the value 
+            using Destructuring and stored in varaibale
+    Template strings
+        -> it is used to show the variable in strings using Backtick string(``)
+            ex: `this is ${data}`
+    Spread operator
+        -> it is used to copy tha value one array ot another (...data)
+    Module
+        -> import and export
+
+State -> when the value is changed dynamically use State
+effect -> make any chnages or call api or any changes happen when page rendering
+            use effect -> first render , make second parameter is []
+                        ->every time call second parameter is not provide
+
+form -> same as html used to get the data
+Router used to navigate using router package in react, 
+        main properties ->
+            1.BrowserRouter, 
+            2.routers, 
+            3.router
+            4.  useNavigate -> it is used to navigate the router like one route to another route,
+            5.useParams -> used to get the parameter via router in component
+        we can define Link tag instead of anchor tag 
+        we can send parameter using (:name) and get the parameter in component using hooks(useParams) extract using destructuring
+        inside the component call the router using (useNavigate) property usign destructing amd get the varibale 
+            in this varibale has two parameter one is path(route), and data()
+Memo -> it used to restrict rerender when props are same 
+            ex -> because id component has three component one is take time to load because it is heavy component
+                    but i chnage another component i wnat render only that component not another two component has render
+                    in that case use this meme
+            case: only use hard component
+                    it must have props and when render that props are same
+                
+Hooks
+    useState -> two purpose
+                    1. when component render it keeps the data every render usefull for many places
+                    2. store the data like variable
+    useEffect -> when render the page it automatically called, it has two params
+    Usecontext -> once create it, without passing to child we can use the data in child 
+            Note: mUst use component in inside the component
+    customHooks -> we can create custom like function
+    useRef = it is same as useState , it use used to acces dom.property 
+                    1. like get (html) input values, change style 
+                    2. we can store data prevoius render value
+    useCallback => used to restrict functionCall in component on every render untill dependency change,
+                    when the params are changed execute again.
+                    it is used to cached date, it is not used commonly when it used for criticla function logic.
+    
+    useMemo  => same as calback, it is used for variable
+
+    useReducer => it is used to write logical condition like if switch etc
+
+React Memo => it is used for restrict Rerender function when props are same, it is used for performance mainly for function cached
+
+AdvancedTopics
+    Error boundary -> it is used to dislay some error if cause unwanted error happen it dsplay many error in ui,
+                        in that time we use error boundary
+    Lazy loading -> it is used to prevent late render like
+                        if three component two component rendered but thire one is waitning 
+                        on that time all three component wait for third one
+                        so it is delay on that we display some message or loaderanything
+
+
+Need to Study :
+lifecycle component
+    Mounting
+    updating
+    Unmounting
+
+    1.Mounting
+        cunstructor
+        render
+        componentDidMount -> call after the component render
+    2.updating
